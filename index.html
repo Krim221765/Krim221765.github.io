@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Med Cheikh Studio — Official AI Apps & Software Storefront</title>
+  <link rel="icon" type="image/png" href="studio-logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient Background Glow -->
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="brand">
+        <img src="studio-logo.png" alt="Med Cheikh Studio" class="brand-logo" onerror="this.src='facecut-logo.png'" />
+        <div>
+          <span class="studio-name">Med Cheikh <span>Studio</span></span>
+          <span class="studio-tag">AI Software & Mobile Applications</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#products">Products</a>
+        <a href="#features">Technology</a>
+        <a href="#faq">FAQ</a>
+        <a href="#legal">Legal & Policies</a>
+        <a href="#contact" class="nav-btn">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero container">
+    <div class="hero-text">
+      <span class="pill-badge">⚡ Official Developer Storefront</span>
+      <h1>Next-Generation AI Workflow Utilities & Biometric Styling Apps</h1>
+      <p>We build high-precision, privacy-first artificial intelligence software for Android devices and Chromium browsers. Instant digital license delivery and lifetime PRO upgrades.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn-primary">Explore Software Catalog</a>
+        <button class="btn-secondary" onclick="openLicenseModal()">🔑 Verify License Key</button>
+      </div>
+      <div class="trust-row">
+        <span>🛡️ 100% On-Device Privacy</span>
+        <span>⚡ Instant PRO Activation</span>
+        <span>💳 14-Day Refund Guarantee</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="showcase-card">
+        <img src="hero.png" alt="FaceCut AI Scanner" class="showcase-img" onerror="this.src='facecut-logo.png'" />
+        <div class="scanner-line"></div>
+        <div class="showcase-caption">FaceCut AI — 468-Point Biometric Mesh Engine</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Software Products Catalog -->
+  <section id="products" class="container section-block">
+    <div class="section-header">
+      <h2>Official Software Catalog & PRO Passes</h2>
+      <p>Transparent one-time pricing for lifetime access. No hidden recurring subscriptions.</p>
+    </div>
+
+    <div class="products-grid">
+      <!-- Product 1: FaceCut AI -->
+      <div class="product-card featured">
+        <div class="card-ribbon">ANDROID & WEB APP</div>
+        <div class="product-banner">
+          <img src="hero.png" alt="FaceCut AI Preview" class="banner-img" onerror="this.src='facecut-logo.png'" />
+        </div>
+        <div class="product-title-row">
+          <img src="facecut-logo.png" alt="FaceCut AI Icon" class="app-mini-icon" />
+          <div>
+            <span class="platform-tag">🤖 Android APK & Web App</span>
+            <h3>FaceCut AI — Barber Pass PRO</h3>
+          </div>
+        </div>
+        <p class="product-sub">Biometric Face Geometry Scanner, Personalized Barber Guide & 8K Virtual Haircut Styler.</p>
+        <div class="price-box">
+          <span class="amount">$1.99</span>
+          <span class="period">USD / One-Time Lifetime Pass</span>
+        </div>
+        <ul class="feature-list">
+          <li><strong>468-Point Biometric Face Scanner:</strong> Measures forehead, cheekbones, jawline, and facial symmetry locally on your device to detect your exact face shape (Oval, Round, Oblong, Triangle, Diamond, Square).</li>
+          <li><strong>36 Tailored 8K Haircut Overlays:</strong> Unlocks all 6 custom haircuts per face shape with independent left/right side stretching, 3D tilt, and 6 realistic hair color tints (including Jet Black).</li>
+          <li><strong>Complete Barber Action Guide:</strong> Exact instructions for Top Hair, Sides & Fade, Beard Style, and styles to avoid.</li>
+          <li><strong>Watermark-Free Exports:</strong> Save high-resolution styled photos directly to your phone gallery without watermarks.</li>
+        </ul>
+        <div class="card-actions">
+          <button class="btn-buy" onclick="openCheckoutModal('FaceCut AI — Barber Pass PRO', '$1.99 USD', 'FC-PRO-2026')">
+            Unlock Barber Pass PRO — $1.99
+          </button>
+          <span class="delivery-note">Instant In-App Unlock + Backup License Key via Email</span>
+        </div>
+      </div>
+
+      <!-- Product 2: AI Media Bulk Downloader -->
+      <div class="product-card">
+        <div class="card-ribbon cyan-ribbon">CHROME EXTENSION</div>
+        <div class="product-banner">
+          <img src="downloader.png" alt="AI Media Bulk Downloader Preview" class="banner-img" onerror="this.src='icon128.png'" />
+        </div>
+        <div class="product-title-row">
+          <img src="icon128.png" alt="Extension Icon" class="app-mini-icon" />
+          <div>
+            <span class="platform-tag">🌐 Chrome & Chromium Web Store</span>
+            <h3>AI Media Bulk Downloader & Smart Prompt Organizer</h3>
+          </div>
+        </div>
+        <p class="product-sub">Stop losing your best AI prompts in a messy Downloads folder! The ultimate workflow companion for AI video creators, digital artists, and prompt engineers.</p>
+        <div class="price-box">
+          <span class="amount">$4.99</span>
+          <span class="period">USD / One-Time Lifetime PRO License</span>
+        </div>
+        <ul class="feature-list">
+          <li><strong>Smart AI Filename Generation & Serial Numbering:</strong> Automatically renames downloaded videos and images into clean 3-to-4 word titles with serial numbers (e.g., <code>#001_Lone_Astronaut_Mars_Surface.mp4</code>).</li>
+          <li><strong>Floating "✦ Smart Save" Button:</strong> Hover over any generated media on supported AI platforms for one-click downloading that locks the exact contextual prompt and micro-thumbnail.</li>
+          <li><strong>Built-in Visual Prompt Vault (Popup Gallery):</strong> Live Active Radar, visual cards for MP4/WEBP/PNG/JPG/SVG, instant search by #serial or keyword, and one-click filter tabs.</li>
+          <li><strong>Interactive "🎯 Teach" Mode:</strong> Using a brand-new AI website? Click "🎯 Teach" and select any prompt box to train the extension in 2 seconds.</li>
+          <li><strong>One-Click Offline Archive Exports:</strong> Export standalone searchable dark-mode HTML catalogs or clean CSV spreadsheets.</li>
+        </ul>
+        <div class="card-actions">
+          <button class="btn-buy" onclick="openCheckoutModal('AI Media Bulk Downloader & Smart Prompt Organizer — PRO', '$4.99 USD', 'AIMD-PRO-2026')">
+            Buy Lifetime PRO License — $4.99
+          </button>
+          <span class="delivery-note">Instant Digital License Key Delivery</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy & Architecture Section -->
+  <section id="features" class="container section-block">
+    <div class="section-header">
+      <h2>Engineered for Local Privacy & Reliability</h2>
+      <p>Why creators and everyday users trust Med Cheikh Studio software.</p>
+    </div>
+    <div class="specs-grid">
+      <div class="spec-card">
+        <div class="spec-icon">🔒</div>
+        <h4>100% Privacy-First Local Storage</h4>
+        <p>Both FaceCut AI facial landmark scanning and the Visual Prompt Vault operate 100% locally on your machine using on-device memory and Chrome local storage. Your photos and prompts never leave your device.</p>
+      </div>
+      <div class="spec-card">
+        <div class="spec-icon">⚡</div>
+        <h4>Seamless In-App Activation</h4>
+        <p>No complicated setup. Once your payment is processed, our checkout callback automatically unlocks your PRO features and sends a backup license key to your email.</p>
+      </div>
+      <div class="spec-card">
+        <div class="spec-icon">🛠️</div>
+        <h4>Dedicated Developer Support</h4>
+        <p>Direct access to technical assistance, license recovery, and free lifetime updates for all minor and major releases of your purchased tool.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="container section-block">
+    <div class="section-header">
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">How does the PRO activation work after I pay? <span>+</span></div>
+        <div class="faq-answer">Immediately upon completing the checkout, the application receives an automatic confirmation signal and unlocks all PRO features (all 36 haircuts & watermark removal in FaceCut AI, or unlimited vault exports in AI Media Bulk Downloader). You also receive a lifetime license key by email.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">Are these subscriptions or one-time payments? <span>+</span></div>
+        <div class="faq-answer">Both products are strict one-time purchases ($1.99 for FaceCut AI PRO and $4.99 for AI Media Bulk Downloader PRO). You pay once and enjoy lifetime access without recurring charges.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">What if I need a refund or lose my license key? <span>+</span></div>
+        <div class="faq-answer">We offer a full 14-day money-back guarantee. Simply contact krim221765@gmail.com with your order receipt for immediate assistance or a full refund.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Legal & Compliance Policies -->
+  <section id="legal" class="container section-block">
+    <div class="section-header">
+      <h2>Legal Terms, Privacy & Refund Policies</h2>
+      <p>Full transparency and international e-commerce compliance.</p>
+    </div>
+
+    <div class="tabs-header">
+      <button class="tab-btn active" onclick="switchTab(event, 'tab-terms')">Terms of Service</button>
+      <button class="tab-btn" onclick="switchTab(event, 'tab-privacy')">Privacy Policy</button>
+      <button class="tab-btn" onclick="switchTab(event, 'tab-refund')">Refund & Delivery Policy</button>
+    </div>
+
+    <div id="tab-terms" class="tab-content active">
+      <h3>Terms of Service</h3>
+      <p><strong>Effective Date:</strong> November 2026</p>
+      <p>By downloading, installing, or purchasing a PRO license for software developed by <strong>Med Cheikh Studio</strong> (including <em>FaceCut AI</em> and <em>AI Media Bulk Downloader & Smart Prompt Organizer</em>), you agree to these Terms of Service.</p>
+      <p><strong>1. License Grant:</strong> Upon completing the one-time purchase, Med Cheikh Studio grants you a personal, non-exclusive, lifetime license to activate and use the PRO features on your personal devices.</p>
+      <p><strong>2. Intellectual Property:</strong> All source code, UI designs, 8K hairstyle assets, and algorithms remain the exclusive property of Med Cheikh Studio. Redistribution or resale of license keys is strictly prohibited.</p>
+    </div>
+
+    <div id="tab-privacy" class="tab-content">
+      <h3>Privacy Policy</h3>
+      <p><strong>Effective Date:</strong> November 2026</p>
+      <p><strong>1. Zero Biometric Server Storage:</strong> FaceCut AI processes all camera frames and uploaded selfies locally on the user's device via HTML5 Canvas and MediaPipe FaceMesh. We never upload, store, or share facial images or biometric measurements on any external server.</p>
+      <p><strong>2. Extension Local Storage:</strong> AI Media Bulk Downloader & Smart Prompt Organizer stores prompt history and thumbnails exclusively inside your browser's local storage on your computer.</p>
+      <p><strong>3. Payment Security:</strong> All checkout transactions are handled by our authorized global Merchant of Record payment partner. Med Cheikh Studio never accesses or stores your credit card details.</p>
+    </div>
+
+    <div id="tab-refund" class="tab-content">
+      <h3>Refund & Digital Delivery Policy</h3>
+      <p><strong>1. Instant Digital Delivery:</strong> All orders are fulfilled digitally and instantaneously upon payment completion via in-app callback and email license delivery.</p>
+      <p><strong>2. 14-Day Money-Back Guarantee:</strong> If you experience any technical issue that our support team cannot resolve, or if you are unsatisfied with your purchase for any reason, you are entitled to a full 100% refund within 14 calendar days of purchase. Contact <strong>krim221765@gmail.com</strong> to initiate a refund.</p>
+    </div>
+  </section>
+
+  <!-- Merchant Contact Section -->
+  <section id="contact" class="container section-block">
+    <div class="contact-card">
+      <div>
+        <h3>Merchant & Customer Support Desk</h3>
+        <p>Direct contact details for customer inquiries, billing support, and business verification.</p>
+        <ul class="contact-details">
+          <li><strong>Company / Studio Name:</strong> Med Cheikh Studio</li>
+          <li><strong>Legal Representative:</strong> Mohamed Cheikh El Bedewi</li>
+          <li><strong>Support Email:</strong> <a href="mailto:krim221765@gmail.com">krim221765@gmail.com</a></li>
+          <li><strong>Headquarters:</strong> Nouakchott, Mauritania</li>
+        </ul>
+      </div>
+      <div>
+        <a href="mailto:krim221765@gmail.com?subject=Customer%20Support%20-%20Med%20Cheikh%20Studio" class="btn-primary">✉️ Email Support Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checkout Modal -->
+  <div id="checkoutModal" class="modal-overlay" hidden>
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModals()">×</button>
+      <div class="modal-badge">🔒 Secure Encrypted Checkout</div>
+      <h3 id="modalProductName">Product Name</h3>
+      <p class="modal-price" id="modalProductPrice">$1.99 USD</p>
+      <p class="modal-desc">Enter your email address to receive your instant lifetime PRO activation key and official tax receipt.</p>
+      <form onsubmit="handleOrderSubmit(event)">
+        <input type="email" id="buyerEmail" placeholder="Enter your email address..." required class="modal-input" />
+        <button type="submit" class="btn-buy">Proceed to Payment Gateway →</button>
+      </form>
+      <div id="orderStatusBox" class="status-box" hidden></div>
+    </div>
+  </div>
+
+  <!-- License Verification Modal -->
+  <div id="licenseModal" class="modal-overlay" hidden>
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModals()">×</button>
+      <h3>🔑 Verify Lifetime PRO Key</h3>
+      <p class="modal-desc">Enter your license key to verify its validity or restore PRO status on your device.</p>
+      <form onsubmit="handleLicenseCheck(event)">
+        <input type="text" id="licenseInput" placeholder="e.g. FC-PRO-2026-XXXX" required class="modal-input" />
+        <button type="submit" class="btn-primary" style="width:100%">Verify License Key</button>
+      </form>
+      <div id="licenseStatusBox" class="status-box" hidden></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Med Cheikh Studio (Mohamed Cheikh El Bedewi). All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
